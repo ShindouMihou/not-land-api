@@ -1,0 +1,15 @@
+{
+  "name": "not-land-api",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@geo-maps/earth-seas-1m": "^0.6.0",
+    "geojson-geometries-lookup": "^0.5.0",
+    "hono": "^4.10.7",
+    "hono-rate-limiter": "^0.4.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

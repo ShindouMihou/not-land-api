@@ -59,7 +59,7 @@ app.get(
             if (isNaN(lat) || isNaN(lon)) {
                 return ctx.json({ error: 'Invalid lat or lon query parameters' }, 400);
             }
-            return ctx.json({ areWeInSea: lookup.hasContainers({ type: "Point", coordinates: [lat, lon] })})
+            return ctx.json({ areWeInSea: lookup.hasContainers({ type: "Point", coordinates: [lon, lat] })})
         } catch (err) {
             return ctx.json({ error: 'Invalid lat or lon query parameters' }, 400);
         }
